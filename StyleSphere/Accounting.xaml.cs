@@ -122,7 +122,7 @@ namespace StyleSphere
             int totalSum = 0;
             foreach (ShowProdInfo product in Products)
             {
-                totalSum += product.Price;
+                totalSum += product.Price * product.Count;
             }
             int totalCount = Products.Sum(p => p.Count);
 
