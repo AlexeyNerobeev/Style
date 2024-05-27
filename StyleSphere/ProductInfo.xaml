@@ -1,0 +1,45 @@
+﻿<Window x:Class="StyleSphere.ProductInfo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StyleSphere"
+        mc:Ignorable="d"
+        Title="ProductInfo" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Label Grid.Row="0" Content="ID товара:" Width="120" HorizontalAlignment="Left" Margin="10, 10"/>
+        <TextBox x:Name="ProdId" Grid.Row="0" Width="650" Height="20" HorizontalAlignment="Right" Margin="0, 10, 10, 0"/>
+
+        <Label Grid.Row="1" Content="Название товара:" Width="120" HorizontalAlignment="Left" Margin="10, 10"/>
+        <TextBox x:Name="ProdName" Grid.Row="1" Width="650" Height="20" HorizontalAlignment="Right" Margin="0, 10, 10, 0"/>
+
+        <Label Grid.Row="2" Content="Бренд товара:" Width="120" HorizontalAlignment="Left" Margin="10, 10"/>
+        <TextBox x:Name="BrandName" Grid.Row="2" Width="650" Height="20" HorizontalAlignment="Right" Margin="0, 10, 10, 0"/>
+
+        <Label Grid.Row="3" Content="Цена товара (руб.):" Width="120" HorizontalAlignment="Left" Margin="10, 10"/>
+        <TextBox x:Name="Price" Grid.Row="3" Width="650" Height="20" HorizontalAlignment="Right" Margin="0, 10, 10, 0"/>
+
+        <Label Grid.Row="4" Content="Размеры:" Width="120" HorizontalAlignment="Left" Margin="10, 10"/>
+        <TextBox x:Name="Size" Grid.Row="4" Width="650" Height="20" HorizontalAlignment="Right" Margin="0, 10, 10, 0"/>
+
+        <Label Grid.Row="5" Content="Цвета:" Width="120" HorizontalAlignment="Left" Margin="10, 10"/>
+        <TextBox x:Name="Colors" Grid.Row="5" Width="650" Height="20" HorizontalAlignment="Right" Margin="0, 10, 10, 0"/>
+
+        <Label Grid.Row="6" Content="Количество (шт.):" Width="120" HorizontalAlignment="Left" Margin="10, 10"/>
+        <TextBox x:Name="ProdCount" Grid.Row="6" Width="650" Height="20" HorizontalAlignment="Right" Margin="0, 10, 10, 0"/>
+
+        <Button Grid.Row="7" x:Name="ChangeProd" Width="200" Content="Изменить товар" HorizontalAlignment="Left" Margin="50, 50" Click="ChangeProd_Click"/>
+        <Button Grid.Row="7" x:Name="Cancel" Width="200" Content="Отмена" HorizontalAlignment="Right" Margin="50, 50" Click="Cancel_Click"/>
+    </Grid>
+</Window>

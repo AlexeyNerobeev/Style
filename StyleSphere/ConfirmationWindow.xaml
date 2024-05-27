@@ -1,0 +1,27 @@
+﻿<Window x:Class="StyleSphere.ConfirmationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StyleSphere"
+        mc:Ignorable="d"
+        Title="ConfirmationWindow" Height="300" Width="450">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0" Content="Для удаления учетной записи введите логин и пароль:" Margin="10"/>
+        <Label Grid.Row="1" Content="Логин:" Margin="10"/>
+        <TextBox Grid.Row="2" x:Name="txtLogin" Margin="10"/>
+
+        <Label Grid.Row="3" Content="Пароль:" Margin="10"/>
+        <PasswordBox Grid.Row="4" x:Name="txtPassword" Margin="10"/>
+        <Button Grid.Row="6" Margin="10" Width="200" HorizontalAlignment="Left" VerticalAlignment="Bottom" Content="Удалить" Click="btnYes_Click"/>
+        <Button Grid.Row="6" Margin="10" Width="200" HorizontalAlignment="Right" VerticalAlignment="Bottom" Content="Отмена" Click="btnNo_Click"/>
+    </Grid>
+</Window>

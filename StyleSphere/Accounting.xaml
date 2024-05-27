@@ -8,22 +8,23 @@
         Title="Accounting" Height="450" Width="800">
     <Grid>
         <DockPanel>
-            <ToolBar DockPanel.Dock="Top">
-                <Button Content="Добавить товар" />
-                <TextBlock Text="Найти товар по ID:" VerticalAlignment="Center" Margin="10,0,0,0"/>
-                <TextBox Width="200" Margin="5" />
-                <Button Content="Найти" />
-                <Button Content="Подсчитать сумму всех товаров" Margin="10,0,0,0"/>
-            </ToolBar>
 
-            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
-                <TextBlock Text="Product Inventory Management" FontSize="20"/>
+            <StackPanel VerticalAlignment="Top">
+                <ToolBar DockPanel.Dock="Top">
+                    <Button Content="Добавить товар" Click="NewTov_Click"/>
+                    <TextBlock Text="Найти товар по ID:" VerticalAlignment="Center" Margin="10,0,0,0"/>
+                    <TextBox x:Name="searchTextBox" Width="200" Margin="5" />
+                    <Button Content="Найти" Click="Search_Click"/>
+                    <Button Content="Подсчитать сумму всех товаров" Click="Summ_Click" Margin="10,0,0,0"/>
+                    <Button Content="Удалить товар" Click="DelTov_Click" Margin="10"/>
+                </ToolBar>
             </StackPanel>
+            
         </DockPanel>
 
-        <ListBox x:Name="productPanel" MinWidth=" 200" DockPanel.Dock="Left" Background="Aquamarine" Margin="0,36,0,0">
-
+        <ListBox x:Name="productPanel" MinWidth=" 200" DockPanel.Dock="Left" Background="LightSteelBlue" Margin="0,36,0,0" MouseDoubleClick="Prod_Click">
+            
         </ListBox>
+        
     </Grid>
-
 </Window>

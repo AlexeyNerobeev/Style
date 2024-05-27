@@ -13,6 +13,7 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
         <Label Grid.Row="0" Content="Логин:" Margin="10"/>
@@ -21,6 +22,7 @@
         <Label Grid.Row="2" Content="Пароль:" Margin="10"/>
         <PasswordBox Grid.Row="3" x:Name="txtPassword" Margin="10"/>
 
-        <Button Grid.Row="5" Content="Зарегистрироваться" Click="Register_Click" Margin="10"/>
+        <Button Grid.Row="4" Content="Зарегистрироваться" Click="Register_Click" Margin="10"/>
+        <Button Grid.Row="5" Content="Отмена" Click="Back_Click" Margin="10"/>
     </Grid>
 </Window>

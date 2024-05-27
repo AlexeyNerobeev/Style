@@ -14,6 +14,7 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
         <Label Grid.Row="0" Content="Логин:" Margin="10"/>
@@ -24,5 +25,6 @@
 
         <Button Grid.Row="4" Content="Вход" Click="SignIn_Click" Margin="10"/>
         <Button Grid.Row="5" Content="Регистрация" Click="Register_Click" Margin="10"/>
+        <Button Grid.Row="6" Content="Удалить учетную запись" Click="DeleteAccount_Click" Margin="10"/>
     </Grid>
 </Window>
